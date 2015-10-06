@@ -8,7 +8,7 @@
         <link rel="stylesheet"  href="libs/jQM-flat/jquery.mobile.flatui.css">
         <link rel="stylesheet" type="text/css" href="css/index.css" />
 
-        <title>App Name</title>
+        <title>App ThePoint</title>
     </head>
     <body>
         <div id="app">
@@ -18,11 +18,11 @@
                             <img src="img/logo.png" id="logo"  />
                         </div>
                     <div id="menu">
-                        <a data-icon="flat-checkround" data-theme="e" href="#second-page" data-role="button">Visualizar Eventos</a>
-                        <a data-icon="flat-checkround" data-theme="e" href="#due-page"  data-role="button">Cadastrar Eventos</a>
+                        <a data-icon="flat-checkround" data-theme="e" href="#visualizar" data-role="button">Visualizar Eventos</a>
+                        <a data-icon="flat-checkround" data-theme="e" href="#cadastrar"  data-role="button">Cadastrar Eventos</a>
                         <fieldset class="ui-grid-a">
-                            <div class="ui-block-a"> <a data-icon="flat-checkround" data-theme="g" href="#tips-page"  data-role="button">Equipe</a></div>
-                            <div class="ui-block-b"><a data-icon="ms-question" data-theme="g" href="#about-page"  data-role="button" >Contatos</a></div>
+                            <div class="ui-block-a"> <a data-icon="flat-checkround" data-theme="g" href="#equipe"  data-role="button">Equipe</a></div>
+                            <div class="ui-block-b"><a data-icon="ms-question" data-theme="g" href="#contato"  data-role="button" >Contatos</a></div>
                         </fieldset>
 
 
@@ -30,10 +30,10 @@
                 </div>
             </div><!-- /page  -->
 
-            <div  id="second-page" data-role="page">
+            <div  id="visualizar" data-role="page">
                 <div data-role="header" data-id="header" id="header" data-position="fixed" class="ui-header">
-                    <a href="#home-page"  data-role="button" data-icon="arrow-l" data-inline="true" >Back</a>
-                    <h1>Sample Form</h1>
+                    <a href="#home-page"  data-role="button" data-icon="arrow-l" data-inline="true" >Voltar</a>
+                    <h1>App ThePoint</h1>
                 </div>
                 <div data-role="content" >
                     <form  id="search-form" action="">
@@ -86,13 +86,53 @@
             </div>
 
 
-            <div  id="about-page" data-role="page">
+            <div  id="contato" data-role="page">
                 <div data-role="header" data-id="header1" data-position="fixed" class="ui-header">
-                    <a href="#" data-rel="back" data-role="button" data-icon="arrow-l" data-inline="true" >Back</a>
+                    <a href="#" data-rel="back" data-role="button" data-icon="arrow-l" data-inline="true" >Voltar</a>
                     <h1>About App</h1>
                 </div>
                 <div data-role="content"  class="big-text">
                     <h2>Privacy Policy</h2>
+                    <p>...</p>
+                </div>
+            </div>
+            
+            <div  id="cadastrar" data-role="page">
+                <div data-role="header" data-id="header1" data-position="fixed" class="ui-header">
+                    <a href="#" data-rel="back" data-role="button" data-icon="arrow-l" data-inline="true" >Back</a>
+                    <h1>Cadastro de Eventos</h1>
+                </div>
+                <div data-role="content"  class="big-text">
+                    <div data-role="content" >
+                    <form  id="search-form" action="">
+                        <label for="address">Nome</label>
+                        <input type="text" name="address" id="address" data-mini="true" placeholder="123 cedar ave"/>
+
+                        <div data-role="fieldcontain">
+                            <label for="select-choice-a">Tipo de Eventos</label>
+                            <select name="select-choice" id="select-choice-a" data-native-menu="false" data-mini="true" data-theme="b">
+
+                                <option value="val1">Cultural</option>
+                                <option value="val2">Esportivo</option>
+
+                            </select>
+                        </div>
+
+                        <button type="submit" data-theme="f" data-mini="false" class="ui-btn-hidden" aria-disabled="false">Search</button>
+                    </form>
+                </div>
+                </div>
+            </div>
+            
+            <div  id="equipe" data-role="page">
+                <div data-role="header" data-id="header1" data-position="fixed" class="ui-header">
+                    <a href="#" data-rel="back" data-role="button" data-icon="arrow-l" data-inline="true" >Back</a>
+                    <h1>Equipe</h1>
+                </div>
+                <div data-role="content"  class="big-text">
+                    <h2>Rian</h2>
+                    <h2>Jailson</h2>
+                    <h2>Welton</h2>
                     <p>...</p>
                 </div>
             </div>
